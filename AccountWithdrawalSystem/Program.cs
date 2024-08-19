@@ -22,9 +22,7 @@ namespace AccountWithdrawalSystem
             Console.Write("Withdraw limit: ");
             double withdrawLimit = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-
-            Account account = new Account(accountNumber, holder, initialBalance, withdrawLimit);
-
+            Account account = new Account(accountNumber, holder, initialBalance, withdrawLimit)s
 
             Console.Write("How many withdrawals do you want to make? ");
             int quantity = int.Parse(Console.ReadLine());
@@ -38,11 +36,9 @@ namespace AccountWithdrawalSystem
                 TryToWithdrawFromAccount(account, amount);
             }
 
-
             Console.WriteLine("\n-=-=[ Final Balance ]=-=-");
             Console.WriteLine(account);
             Console.WriteLine("-------------------------");
-
         }
 
         static void TryToWithdrawFromAccount(Account account, double value)

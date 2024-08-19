@@ -27,7 +27,6 @@ namespace AccountWithdrawalSystem.Entities
             Balance += amount;
         }
 
-
         public void Withdraw(Double amount)
         {
             if (amount > WithdrawLimit)
